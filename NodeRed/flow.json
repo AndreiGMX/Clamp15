@@ -1,0 +1,312 @@
+[
+    {
+        "id": "87d718a4ed5a6a15",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f5c93dc28e0f3273",
+        "type": "debug",
+        "z": "87d718a4ed5a6a15",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e8f729f41c34a92b",
+        "type": "inject",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "up",
+        "payloadType": "str",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "73f9eef29ed5c252",
+        "type": "serial out",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "serial": "",
+        "x": 300,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "14e072f22b4c7ff7",
+        "type": "inject",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "middle",
+        "payloadType": "str",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "4b8fb44f5dec7699",
+        "type": "inject",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "down",
+        "payloadType": "str",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "a6d0dd3b1632bce0",
+        "type": "inject",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "service",
+        "payloadType": "str",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "d19ed89c2ae4874e",
+        "type": "ui_button",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "group": "0d4ea9db2e069b20",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Kl.15 on & KL.S on",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "up",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "36c9ab71af9ade30",
+        "type": "ui_button",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "group": "0d4ea9db2e069b20",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "KL.15 off & KL.S on",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "middle",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 320,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "279cfd5dd3b53dc3",
+        "type": "ui_button",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "group": "0d4ea9db2e069b20",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "KL.15 off & KL.S off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "down",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "73f9eef29ed5c252"
+            ]
+        ]
+    },
+    {
+        "id": "7099bc26d33d53f2",
+        "type": "ui_text",
+        "z": "87d718a4ed5a6a15",
+        "group": "0d4ea9db2e069b20",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current state",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 670,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5ecae6cb196c0153",
+        "type": "serial in",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "serial": "",
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "6447a223c306d820"
+            ]
+        ]
+    },
+    {
+        "id": "6447a223c306d820",
+        "type": "switch",
+        "z": "87d718a4ed5a6a15",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Enter command:",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "7099bc26d33d53f2",
+                "f5c93dc28e0f3273"
+            ]
+        ]
+    },
+    {
+        "id": "0d4ea9db2e069b20",
+        "type": "ui_group",
+        "name": "Clamp 15 switch",
+        "tab": "91134b53d8ec0c93",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "91134b53d8ec0c93",
+        "type": "ui_tab",
+        "name": "Eleanor",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
