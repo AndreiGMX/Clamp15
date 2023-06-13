@@ -2,7 +2,8 @@
  Simulate remotely clamp15 signal with Arduino and relay module.
  
  ## Wiring:
-![Wiring:](/images/SCR-20230610-nwri.jpeg)
+![relayModule](images/SCR-20230613-jomn.png)
+![switch](images/SCR-20230613-jqiu.jpeg)
 
 ## Arduino
 An Arduino nano and relay module with 4 relays (see picture above) was used to simulate and replace the guitar 3-step switch.
