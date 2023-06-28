@@ -11,7 +11,6 @@ void relayToSwitch(const int position[])
 {
   for (int i = 0; i < 4; i++)
   {
-    pinMode(IN[i], OUTPUT);
     digitalWrite(IN[i], position[i]);
   }
 }
@@ -21,6 +20,10 @@ void setup()
   // put your setup code here, to run once:
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(9600);
+  for (int i = 0; i < 4; i++)
+  {
+    pinMode(IN[i], OUTPUT);
+  }
   relayToSwitch(upStates);
    Serial.println("KL.15 on & KL.S on");
 }
